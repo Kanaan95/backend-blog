@@ -18,7 +18,7 @@ jobs:
                 node-version: [12.x]
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         env:
-            URI: ${{ secrets.URI }}
+            URI: ${{ secrets.URI_SECRET }}
 
         steps:
             - uses: actions/checkout@v3
