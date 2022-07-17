@@ -30,7 +30,7 @@ app.get('/', (_, res) => res.status(200).send({ message: 'API Running' }));
 app.use('/api/users', usersRoutes);
 
 // Launching the server
-const server = app.listen(PORT, async () => {
+const server = app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
 
