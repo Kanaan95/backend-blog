@@ -1,0 +1,39 @@
+{
+    "name": "backend-dev-blog",
+    "version": "1.0.0",
+    "description": "The backend project for the developer blog",
+    "main": "index.js",
+    "jest": {
+        "testEnvironment": "jest-environment-node",
+        "transform": {}
+      },
+    "scripts": {
+        "test": "mocha --recursive --exit",
+        "dev": "nodemon index",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "reset:modules": "rm -rf node_modules && sudo npm install"
+    },
+    "keywords": [],
+    "author": "Rami Kanaan",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.4.4"
+    },
+    "devDependencies": {
+        "chai": "^4.3.6",
+        "eslint": "^8.20.0",
+        "eslint-config-prettier": "^8.5.0",
+        
+        "mocha": "^10.0.0",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1",
+        "supertest": "^6.2.4"
+    }
+}
