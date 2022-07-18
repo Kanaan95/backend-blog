@@ -11,6 +11,7 @@ dotenv.config();
 
 // Import routes
 const usersRoutes = require('./routes/users');
+const profileRoutes = require('./routes/profile');
 
 // Database
 const { connectDB, closeDB } = require('./config/db');
@@ -28,6 +29,7 @@ app.get('/', (_, res) => res.status(200).send({ message: 'API Running' }));
 
 // Routes
 app.use('/api/users', usersRoutes);
+app.use('/api/profile', profileRoutes);
 
 // Launching the server
 const server = app.listen(PORT, () => {
